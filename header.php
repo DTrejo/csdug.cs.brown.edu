@@ -24,17 +24,3 @@
 			<a class="button" href="#">Home</a>
 		</div>
 	</div>
-
-	<div class="showcase">
-		<div class="content">
-			<img src="rapt.png">
-			<h2>Robots Are People Too</h2>
-			<p>Robots Are People Too (RAPT) is a complex and challenging HTML5 platformer. The exit to each level is blocked by enemies that roll, jump, fly, and shoot to prevent escape at all costs. Gameplay is exclusively two-player and uses a unique split-screen mechanic. The levels and enemies are designed to promote cooperation between players.</p>
-			<p><a href="#">More info...</a></p>
-			<div class="clear"></div>
-		</div>
-		<div class="shadow-bottom"></div>
-	</div>
-
-	<div class="main">
-		<div class="content">
