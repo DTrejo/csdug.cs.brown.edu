@@ -25,8 +25,8 @@ a { color: inherit; }
 .main .post h2 a { text-decoration: none; }
 .main .post p { margin: 20px 0 0 0; }
 
-.showcase { background: #6F3F1F; border-top: 1px solid #8F5F3F; }
-.showcase > .content { padding-top: 40px; padding-bottom: 40px; }
+.showcase { background: #6F3F1F; border-top: 1px solid #8F5F3F; overflow: hidden; }
+.showcase > .content { padding: 40px 0; }
 .showcase img { float: left; height: 400px; margin: 0 40px 40px 0; box-shadow: 0 0 15px #1F170F; -webkit-box-shadow: 0 0 15px #1F170F; -moz-box-shadow: 0 0 15px #1F170F; }
 .showcase h2 { color: white; text-shadow: 0 0 15px #1F170F; }
 .showcase p { color: #FFEFDF; }
@@ -36,7 +36,7 @@ a { color: inherit; }
 .comment-area .comment-list { padding-left: 100px; }
 .comment-area .author { float: left; width: 100px; margin-left: -100px; }
 .comment-area .comment { padding: 25px 30px 5px 30px; margin-top: 40px; background: white; border: 1px solid #BFBFBF; }
-.comment-area h3 { margin: 0; color: black; }
+.comment-area h3 { margin: 5px 0 0 0; color: black; }
 .comment-area .new-comment { padding-top: 60px; }
 .comment-area .comment-edit-link { float: right; }
 .comment-area .comment-date { font-size: 80%; }
