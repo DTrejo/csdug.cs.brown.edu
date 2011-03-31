@@ -5,8 +5,9 @@ Version: 1.0
 Author: Evan Wallace and David Trejo
 */
 
-body { background: #DFDFDF; color: #3F3F3F; margin: 0 0 200px 0; font: 14px/20px Helvetica, Arial, sans-serif; }
-h2 { font-weight: bold; font-size: 40px; line-height: 40px; }
+body { background: #DFDFDF; color: #3F3F3F; margin: 0 0 200px 0; font: 14px/20px Apex,"Helvetica Neue","HelveticaNeue","Lucida Grande", Helvetica, Arial, sans-serif;
+ }
+h2 { font-weight: bold; font-size: 40px; line-height: 40px; font-family: 'Ubuntu', arial, serif;}
 table { border-collapse: collapse; }
 a { color: inherit; }
 
@@ -24,9 +25,10 @@ a { color: inherit; }
 .main .post h2 { margin: 0; color: black; }
 .main .post h2 a { text-decoration: none; }
 .main .post p { margin: 20px 0 0 0; }
+/*.main .post p.wp-caption-text { margin: 0px; } ehhhhh...*/
 
 .showcase { background: #6F3F1F; border-top: 1px solid #8F5F3F; overflow: hidden; }
-.showcase > .content { padding: 40px 0; } /* not that there are two .content classes...*/
+.showcase > .content { padding: 40px 0; } /* note that there are two .content classes...*/
 .showcase .shadow-bottom { margin: 0 -40px -10px -40px; height: 10px; box-shadow: 0 0 30px black; -webkit-box-shadow: 0 0 30px black; -moz-box-shadow: 0 0 30px black; }
 
 .comment-area .comment-list { padding-left: 100px; }
@@ -40,11 +42,12 @@ a { color: inherit; }
 .comment-area td { padding: 0 20px 0 0; }
 .comment-area table { margin: 20px 0; }
 
+.entry { width: 100%; overflow: hidden; } /* keeps image inside container */
+
 /* orbit styles */
 #featured > .content h2 {
   font-size: 40px;
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
   margin-top: 40px;
   color: #222;
@@ -52,7 +55,7 @@ a { color: inherit; }
 }
 #featured > .content .entry {
   margin-left: 40px;
-  width: 600px;
+  max-width: 600px;
   margin-left: 120px;
 }
 #featured > img {
@@ -60,11 +63,18 @@ a { color: inherit; }
 }
 #featured > .content {
   color: #222;
-  overflow: hidden;
 }
 .alignleft { float: left; margin-right: 40px; } /* a class added by wordpress wysiwyg */
-.entry img { box-shadow:0 0 15px #1F170F;-webkit-box-shadow:0 0 15px #1F170F;-moz-box-shadow:0 0 15px #1F170F; }
+
+.entry img {
+  /* shadow makes it look bad b/c of float to get the text to flow around the image
+  I' like to fix it but I'm annoyed right now.
+
+  box-shadow: 0 0 15px #1F170F;
+  -webkit-box-shadow: 0 0 15px #1F170F;
+  -moz-box-shadow: 0 0 15px #1F170F; */
+  clear: both;
+}
 
 /* don't let users accidentally select the navigation buttons when clicking */
 #featured .slider-nav { -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; }
-
