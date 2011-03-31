@@ -9,7 +9,7 @@
 						<?php the_content(); ?>
 					</div>
 				</div>
-				<div id="comment-area">
+				<div class="comment-area">
 					<?php comments_template(); ?>
 				</div>
 			<?php endwhile; ?>
