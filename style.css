@@ -1,0 +1,24 @@
+/*
+Theme Name: CS DUG
+Description: Made for the CS DUG in 2011.
+Version: 1.0
+Author: Evan Wallace and David Trejo
+*/
+
+body { background: #DFDFDF; color: #3F3F3F; margin: 0; font: 14px/20px Helvetica, Arial, sans-serif; }
+h2 { font-weight: bold; font-size: 40px; line-height: 40px; }
+a { color: inherit; }
+
+.nav, .main { padding: 0 40px; }
+.content { max-width: 875px; margin: 0 auto; }
+
+.nav { height: 50px; background: black; }
+.nav .logo, .nav .button { color: white; line-height: 50px; font-weight: bold; }
+.nav .logo { float: left; font-size: 25px; }
+.nav .button { float: right; text-decoration: none; padding-left: 30px; }
+
+.main { background: #DFDFDF; overflow-y: hidden; border-top: 1px solid white; }
+.main .post { margin: 40px 0; padding: 40px; background: white; border: 1px solid #BFBFBF; }
+.main .post h2 { margin: 0; color: black; }
+.main .post h2 a { text-decoration: none; }
+.main .post p { margin: 20px 0 0 0; }
