@@ -16,6 +16,7 @@ a { color: inherit; }
 .nav { height: 50px; background: black; }
 .nav .logo, .nav .button { color: white; line-height: 50px; font-weight: bold; }
 .nav .logo { float: left; font-size: 25px; }
+.nav .logo a { text-decoration: none; }
 .nav .button { float: right; text-decoration: none; padding-left: 30px; }
 
 .main { background: #DFDFDF; overflow-y: hidden; border-top: 1px solid white; }
