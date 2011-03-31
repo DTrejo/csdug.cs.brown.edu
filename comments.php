@@ -16,7 +16,7 @@
     <?php foreach ($comments as $comment) : ?>
       <div id="comment-<?php comment_ID() ?>">
         <div class="author">
-          <?php echo get_avatar( $comment, 64 ); ?>
+          <div class="avatar"><?php echo get_avatar( $comment, 48 ); ?></div>
           <h3><?php comment_author_link() ?></h3>
           <div class="comment-date"><?php comment_date('F jS, Y') ?></div>
         </div>
