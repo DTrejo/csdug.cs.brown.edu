@@ -4,7 +4,7 @@
 
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
+	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -19,7 +19,7 @@
 <body>
 	<div class="nav">
 		<div class="content">
-			<div class="logo">CS DUG</div>
+			<div class="logo"><a href="/">CS DUG</a></div>
 			<a class="button" href="#">Student Projects</a>
 			<a class="button" href="#">Home</a>
 		</div>
