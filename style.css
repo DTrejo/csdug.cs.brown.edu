@@ -26,11 +26,7 @@ a { color: inherit; }
 .main .post p { margin: 20px 0 0 0; }
 
 .showcase { background: #6F3F1F; border-top: 1px solid #8F5F3F; overflow: hidden; }
-.showcase > .content { padding: 40px 0; }
-.showcase img { float: left; height: 400px; margin: 0 40px 40px 0; box-shadow: 0 0 15px #1F170F; -webkit-box-shadow: 0 0 15px #1F170F; -moz-box-shadow: 0 0 15px #1F170F; }
-.showcase h2 { color: white; text-shadow: 0 0 15px #1F170F; }
-.showcase p { color: #FFEFDF; }
-.showcase .clear { clear: both; margin: 40px; }
+.showcase > .content { padding: 40px 0; } /* not that there are two .content classes...*/
 .showcase .shadow-bottom { margin: 0 -40px -10px -40px; height: 10px; box-shadow: 0 0 30px black; -webkit-box-shadow: 0 0 30px black; -moz-box-shadow: 0 0 30px black; }
 
 .comment-area .comment-list { padding-left: 100px; }
@@ -44,7 +40,31 @@ a { color: inherit; }
 .comment-area td { padding: 0 20px 0 0; }
 .comment-area table { margin: 20px 0; }
 
-/* orbit styles, (can be removed later) */
-#featured > .content p { margin-left: 40px; color:#222; }
-#featured > .content h2 { font-size:40px;text-transform:uppercase;font-weight:bold;text-align:center;margin-top:180px;color:#222;line-height:50px; }
-#featured > .content h3 { text-align:center;font-size:22px;color:#222; }
+/* orbit styles */
+#featured > .content h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  color: #222;
+  line-height: 50px;
+}
+#featured > .content .entry {
+  margin-left: 40px;
+  width: 600px;
+  margin-left: 120px;
+}
+#featured > img {
+  width: 850px; /* some strange interaction with the slider :| */
+}
+#featured > .content {
+  color: #222;
+  overflow: hidden;
+}
+.alignleft { float: left; margin-right: 40px; } /* a class added by wordpress wysiwyg */
+.entry img { box-shadow:0 0 15px #1F170F;-webkit-box-shadow:0 0 15px #1F170F;-moz-box-shadow:0 0 15px #1F170F; }
+
+/* don't let users accidentally select the navigation buttons when clicking */
+#featured .slider-nav { -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none; }
+

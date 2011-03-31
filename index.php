@@ -1,28 +1,44 @@
 <?php get_header(); ?>
 
-  <!-- Here we go with the hacky stuff -->
-  <!-- Not sure how to best do this so it doesn't conflict with other pages -->
-  <!-- Attach orbit CSS+JS -->
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/orbit-1.2.3.css">
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-1.5.1.min.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.orbit-1.2.3.min.js"></script>
-  <!-- [if IE]>
-       <style type="text/css">
-        .timer { display: none !important; }
-        div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
-      </style>
-  <![endif]-->
-
   <!-- Run orbit -->
   <script type="text/javascript">
     $(window).load(function() {
-      $('#featured').orbit();
+      $('#featured').orbit({
+           animation: 'horizontal-push',    // fade, horizontal-slide, vertical-slide, horizontal-push
+           animationSpeed: 800,             // how fast animations are
+           timer: false,                     // true or false to have the timer
+           advanceSpeed: 5000,              // if timer is enabled, time between transitions
+           pauseOnHover: false,             // if you hover pauses the slider
+           startClockOnMouseOut: false,     // if clock should start on MouseOut
+           startClockOnMouseOutAfter: 1000, // how long after MouseOut should the timer start again
+           directionalNav: true,            // manual advancing directional navs
+           captions: true,                  // do you want captions?
+           captionAnimation: 'fade',        // fade, slideOpen, none
+           captionAnimationSpeed: 800,      // if so how quickly should they animate in
+           bullets: false,                  // true or false to activate the bullet navigation
+           bulletThumbs: false,             // thumbnails for the bullets
+           bulletThumbLocation: '',         // location from this file where thumbs will be
+           afterSlideChange: function(){}   // empty function
+      });
     });
   </script>
 
   <div class="showcase">
     <div class="content">
       <div id="featured">
+        <a href=""><img src="<?php bloginfo('template_url'); ?>/images/dummy-images/overflow.jpg" /></a>
+        <!-- start auto-generated posts -->
+        <?php while (have_posts()) : the_post(); if (!(has_tag('featured'))) { continue; } ?>
+          <div class="content" style="background: url(<?php bloginfo('template_url'); ?>/images/dummy-images/coffee.jpg);">
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class="entry">
+              <!-- <img src="<?php the_post_thumbnail() ?>" alt="Thumbnail for <?php the_title(); ?>"> -->
+              <?php the_content(); ?>
+            </div>
+          </div>
+        <?php endwhile; ?>
+        <!-- end auto-generated posts -->
+
         <div class="content" style="background: url(<?php bloginfo('template_url'); ?>/images/dummy-images/coffee.jpg);">
           <h2>Orbit does content now.</h2>
           <h3>Highlight me...I'm text.</h3>
@@ -31,25 +47,9 @@
         <img src="<?php bloginfo('template_url'); ?>/images/dummy-images/captions.jpg" data-caption="#htmlCaption" />
         <img src="<?php bloginfo('template_url'); ?>/images/dummy-images/features.jpg"  />
 
-        <!-- start auto-generated posts -->
-        <?php while (have_posts()) : the_post(); if (!(has_tag('featured'))) { continue; } ?>
-          <div class="content" style="background: url(<?php bloginfo('template_url'); ?>/images/dummy-images/coffee.jpg);">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <div class="entry">
-              <?php the_content(); ?>
-            </div>
-          </div>
-        <?php endwhile; ?>
-        <!-- end auto-generated posts -->
       </div>
       <!-- Captions for Orbit -->
       <span class="orbit-caption" id="htmlCaption"><strong>I'm A Badass Caption:</strong> I can haz <a href="#">links</a>, <em>style</em> or anything that is valid markup :)</span>
-
-      <!-- <img src="rapt.png">
-      <h2>Robots Are People Too</h2>
-      <p>Robots Are People Too (RAPT) is a complex and challenging HTML5 platformer. The exit to each level is blocked by enemies that roll, jump, fly, and shoot to prevent escape at all costs. Gameplay is exclusively two-player and uses a unique split-screen mechanic. The levels and enemies are designed to promote cooperation between players.</p>
-      <p><a href="#">More info...</a></p>
-      <div class="clear"></div> -->
 
     </div> <!-- end orbit -->
     <div class="shadow-bottom"></div>

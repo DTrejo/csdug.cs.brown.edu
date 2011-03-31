@@ -13,6 +13,19 @@
   <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+
+  <!-- orbit css+js -->
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/orbit-1.2.3.css">
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.orbit-1.2.3.min.js"></script>
+
+  <!-- [if IE]>
+       <style type="text/css">
+        .timer { display: none !important; }
+        div.caption { background:transparent; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);zoom: 1; }
+      </style>
+  <![endif]-->
+
   <?php wp_head(); ?>
 
 </head>
