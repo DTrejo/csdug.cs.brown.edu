@@ -30,6 +30,17 @@
         <a href=""><img src="<?php bloginfo('template_url'); ?>/images/dummy-images/overflow.jpg" /></a>
         <img src="<?php bloginfo('template_url'); ?>/images/dummy-images/captions.jpg" data-caption="#htmlCaption" />
         <img src="<?php bloginfo('template_url'); ?>/images/dummy-images/features.jpg"  />
+
+        <!-- start auto-generated posts -->
+        <?php while (have_posts()) : the_post(); if (!(has_tag('featured'))) { continue; } ?>
+          <div class="content" style="background: url(<?php bloginfo('template_url'); ?>/images/dummy-images/coffee.jpg);">
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class="entry">
+              <?php the_content(); ?>
+            </div>
+          </div>
+        <?php endwhile; ?>
+        <!-- end auto-generated posts -->
       </div>
       <!-- Captions for Orbit -->
       <span class="orbit-caption" id="htmlCaption"><strong>I'm A Badass Caption:</strong> I can haz <a href="#">links</a>, <em>style</em> or anything that is valid markup :)</span>

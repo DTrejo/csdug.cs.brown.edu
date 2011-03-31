@@ -45,7 +45,7 @@ a { color: inherit; }
 .comment-area table { margin: 20px 0; }
 
 /* orbit styles, (can be removed later) */
-#featured > .content { color:#222; }
+#featured > .content p { margin-left: 40px; color:#222; }
 #featured > .content h2 { font-size:40px;text-transform:uppercase;font-weight:bold;text-align:center;margin-top:180px;color:#222;line-height:50px; }
 #featured > .content h3 { text-align:center;font-size:22px;color:#222; }
 
