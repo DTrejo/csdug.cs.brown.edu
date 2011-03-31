@@ -5,8 +5,9 @@ Version: 1.0
 Author: Evan Wallace and David Trejo
 */
 
-body { background: #DFDFDF; color: #3F3F3F; margin: 0; font: 14px/20px Helvetica, Arial, sans-serif; }
+body { background: #DFDFDF; color: #3F3F3F; margin: 0 0 200px 0; font: 14px/20px Helvetica, Arial, sans-serif; }
 h2 { font-weight: bold; font-size: 40px; line-height: 40px; }
+table { border-collapse: collapse; }
 a { color: inherit; }
 
 .nav, .showcase, .main { padding: 0 40px; }
@@ -32,21 +33,18 @@ a { color: inherit; }
 .showcase .clear { clear: both; margin: 40px; }
 .showcase .shadow-bottom { margin: 0 -40px -10px -40px; height: 10px; box-shadow: 0 0 30px black; -webkit-box-shadow: 0 0 30px black; -moz-box-shadow: 0 0 30px black; }
 
+.comment-area .comment-list { padding-left: 100px; }
+.comment-area .author { float: left; width: 100px; margin-left: -100px; }
+.comment-area .comment { padding: 25px 30px 5px 30px; margin-top: 40px; background: white; border: 1px solid #BFBFBF; }
+.comment-area h3 { margin: 0; color: black; }
+.comment-area .new-comment { padding-top: 60px; }
+.comment-area .comment-edit-link { float: right; }
+.comment-area .comment-date { font-size: 80%; }
+.comment-area p { margin: 0 0 20px 0; }
+.comment-area td { padding: 0 20px 0 0; }
+.comment-area table { margin: 20px 0; }
+
 /* orbit styles, (can be removed later) */
-#featured > .content {
-  color: #222;
-}
-#featured > .content h2 {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 180px;
-  color: #222;
-  line-height: 50px;
-}
-#featured > .content h3 {
-  text-align: center;
-  font-size: 22px;
-  color: #222;
-}
+#featured > .content { color:#222; }
+#featured > .content h2 { font-size:40px;text-transform:uppercase;font-weight:bold;text-align:center;margin-top:180px;color:#222;line-height:50px; }
+#featured > .content h3 { text-align:center;font-size:22px;color:#222; }

@@ -19,7 +19,7 @@
 <body>
 	<div class="nav">
 		<div class="content">
-			<div class="logo"><a href="/">CS DUG</a></div>
+			<div class="logo"><a href="<?php bloginfo('url'); ?>">CS DUG</a></div>
 			<a class="button" href="#">Student Projects</a>
 			<a class="button" href="#">Home</a>
 		</div>
