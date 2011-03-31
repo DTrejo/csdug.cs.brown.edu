@@ -9,7 +9,7 @@ body { background: #DFDFDF; color: #3F3F3F; margin: 0; font: 14px/20px Helvetica
 h2 { font-weight: bold; font-size: 40px; line-height: 40px; }
 a { color: inherit; }
 
-.nav, .main { padding: 0 40px; }
+.nav, .showcase, .main { padding: 0 40px; }
 .content { max-width: 875px; margin: 0 auto; }
 
 .nav { height: 50px; background: black; }
@@ -22,3 +22,11 @@ a { color: inherit; }
 .main .post h2 { margin: 0; color: black; }
 .main .post h2 a { text-decoration: none; }
 .main .post p { margin: 20px 0 0 0; }
+
+.showcase { background: #6F3F1F; border-top: 1px solid #8F5F3F; }
+.showcase .content { padding-top: 40px; }
+.showcase img { float: left; height: 400px; box-shadow: 0 0 15px #1F170F; margin: 0 40px 40px 0; }
+.showcase h2 { color: white; text-shadow: 0 0 15px #1F170F; }
+.showcase p { color: #FFEFDF; }
+.showcase .clear { clear: both; margin: 40px; }
+.showcase .shadow-bottom { margin: 0 -40px -10px -40px; height: 10px; box-shadow: 0 0 30px black; }

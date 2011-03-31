@@ -8,7 +8,7 @@
 			
 			<p>Looks like the page you're looking for isn't here anymore. Try browsing the <a href="">categories</a>, <a href="">archives</a>, or using the search box below.</p>
 			
-			<?php include(TEMPLATEPATH.'/searhform.php'); ?>
+			<?php include(TEMPLATEPATH . '/searchform.php'); ?>
 		
 		</div> <!-- .post -->
 	
